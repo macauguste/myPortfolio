@@ -1,0 +1,216 @@
+1)bootstrap latest link - <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+1)iframe - utilize javascript to change video based on project - <iframe scr="" width="" height ="" name=""></iframe>
+2)form - getting people to say who viewed it - enter name and where they know me from - utilize select with options - <select name= "locations">
+															<option value="usc"> USC</option>
+															<option value="saint_lucia"selected> 758</option>
+															<option value="other"> Other</option>
+														       </select>
+															
+															<textarea name="other" rows="" cols="">
+																tell me where you met me!
+															</textarea>
+																
+															<br/>
+															<br/>
+
+															<button type=button onclick="alert('thank you for being a part of this experience!')">Commit </button>
+or use radio btn - <input type="radio" name="" value="USC" checked> USC (one button selected at a time)
+
+or use check box - <input type="checkbox" name="" value="USC" checked> USC (multiple buttons can be selected)
+
+3)using range type to show experience in language - <input type="range' id="" name="" value="">
+							Css
+						    <input type="range' id="" name="" value="">
+							JavaScript
+						    <input type="range' id="" name="" value="">
+
+
+JAVASCRIPT
+--------------------------------
+
+document.getElementById("name of ID you are looking to target").innerHTML = (what ever you want to do to the element)
+
+String Manipulation - (slice,search,substring,replace,toUpperCase,concat) - function FindStr(){
+										var fullName = "Mckern Auguste"
+										var text1 = "item1"
+										var text2 = "item2"
+										var results = fullName.toUpperCase();
+										}
+
+
+Variable scopping - all global vars are window vars
+
+EVENTS - onmouseover, onclick, onkeydown
+
+onclick can apply to a paragraph or anything else. (<p onclick= "this.innerHTML = 'Works!'" > Click ME</p>) - this replaces the paragraph when you click on it
+
+stuff with numbers - .toExponential, .toFixed, .toPrecision(5), parseInt(converts string to number), parseFloat(converts string to float), 
+valurOf(gives value of string), Math.random(random number) Math.random() * 11 (gives you a number between 0-10), Math.min/Math.max (returns highest and lowesr value), 
+Math.round (to the closest whole number), Math.floor/ceiling (rounds up or down), Math.E(), Math.PI, Math.SQRT2 (returns square root of 2), 
+
+
+DATE - Date(); - gives you day of the week, month, day, year, time, timezone (timezone)
+	.toUTCString() - gives UTC format
+	.getTime() time in miliseconds since date
+	.getFullYear() - returns full year
+	.getDay() - returns day of week
+	
+
+Arrays - var classes = new Array("Bible","Math")
+	var stuff = {"Book","Ball", 50}
+	classes.sort(); - sorts by alphabeticla order
+	classes[classes.length] = "Network Security" - this adds network security to the array
+	classes[classes.length - 1] - gives last element in array 
+	classes = classes.sort();
+	var index;
+	var text = "<ul>" - assign text value of unordered list
+	for(index = 0; index<classes.length;index++){
+		text += "<li> Class now is" + classes[index] + "</li>";
+	}
+	text += "</ul>"; - closes ul tag after the list is done
+
+	document.getElementById("sameple").innerHTML = text; - displays contents of array
+
+	classes.valueOf() - string of all the values in the array
+
+	classes.pop() - shows last element then removes it
+
+	classes.length() - shows amount in array
+
+	classes.push() - adds to edd of the array
+	
+	classes.shift() - drops first element from array and pushes all elements left
+		
+	classes.unshift() - adds element to front of array
+
+	classes.splice(0,1) - removes to array based on elements
+
+	classes.splice(2,0,"Physics","IT") - adds to array based on elements chosen
+
+	 	
+	var numbers = [1,2,3,4]
+
+	numbers.sort(function(a,b){return a-b}); sorts from smallest to biggest	
+	
+	numbers.sort(function(a,b){return b-a}); sorts from biggest to smallest 
+
+	var classesandnumbers = numbers.concat(classes); - joins array class to numbers
+
+	
+	
+CONDITIONS AND LOOPS - var x = 8;
+
+	if(x == 8) {
+		text = "correct"	
+	}else{
+		text = "wrong"
+	}
+
+	one = is assignment, two == is test
+
+	text = (x <= 8) ? "low score":"high score";
+	
+	switch and case statements for selection
+
+displaying in loops
+
+	fruits = ["lemon","grapefruit","watermelon"]
+
+	for(i=0; i < fruits.length; i++)
+	{
+		text += fruits[i] + "<br/>"
+	}
+
+	^-loops throuhg array and displays with a break after each element
+	
+	var startAt = 0;
+	var endAt = fruit.length;
+
+	while (startAt < endAt){
+		text += fruits[startAt] + "<br/>"
+		startAt++;
+	}
+	
+	^-loops throuhg array and displays with a break after each element
+
+	breaks take you out of loops based on conditions 
+
+	for(i=0; i < 10; i++)
+	{
+		It (i == 3)
+		break;
+
+		text += "the number now is " + 1 + "<br/>";
+	}
+
+	continue breaks the loop based on conditions then lets it continue after
+
+	list: {
+	}
+
+	displays information from arrays
+
+Get position - 
+	function getPos(){
+		var str = "I will look for javascript in this long strin and tell you where it is";
+		var srch = str.search(/javascript/i);
+		document.getElementById("sample").innerHTML = srch;
+	}	
+
+	^ will find "javascript" and display number it starts at
+
+	str.replace(/Microsoft/i), "Website"); replaces "microsoft" with "website"
+	
+	^Microsoft with out /i is case sensitive
+	
+	var pattern = /john/i;
+	result = pattern.test("is John a letter e here?")
+	document.getElementById("sample").innerHTML = result; 
+	^^ looks for john in sentence and says true or false
+
+	
+	var text= "this is a test to see if this will work"
+	var finder = /will/.exec("this is a test to see if this will work");
+	^^  looks for will and displays will
+
+TRAPPING ERRORS
+
+	use try catch
+
+
+	<p id="problems"> </p>
+	<p id="noissues"> </p>
+	function process() {
+		var issues = 0; //counts the issues
+		var message,x;	// stors the valur of inout and where the reuslts are displayed
+		var message = document.getElementById("problems"); //stroes the element with the id of problems
+		message.innerHTML = "ALL is OK!";	//stores/displays ALL is OK in the message placeholder
+		var noisses = document.getElementById("noissues") // stores the noissues placeholder
+		x = document.getElementById("demo").value; //stores the value of the input
+
+		try{
+			if(x=="") throw "empty"; //throw an error
+			if (isNaN(x)) throw "not a number"; //
+			x==Number(x);
+			if (x<5) throw "too low";
+			if (x > 100) throw "too high"
+		}catch (err){
+			message.innerHTML = "The problem is that the input is " + err;
+			issues = 1;
+		}finally{
+		
+			if (issues == 0){
+				noissues.innerHTML = "theere was NO PROBLEM with what was entered!";
+			}else{
+				noissues.innerHTML = "there were PROBLEMS";	
+			}
+		}
+	}
+
+DEBUGGING
+	
+	a = 5;
+	b = 6;
+	c = a+b;
+	console.log(c)
+	

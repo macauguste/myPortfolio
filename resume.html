@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MDA Webpage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7ed0c2e805.js" crossorigin="anonymous"></script>
+   <script src="https://unpkg.com/vue@next"></script>
+    
+</head>
+<body>
+        <div id="app" class="sidebar" style="background: rgba(20, 43, 58, 0.7);">
+            <div class="PInfo">
+            <a href="homePage.html">
+                <div class="PPic">
+                    <img class="portforlioPicture"  src="/images/portfoliopic.png" alt=""> 
+                </div>
+                <div class="PTitle" >
+                    <h1>{{ name }} </h1>
+                    <h2>{{ title }} </h2> 
+                </div>
+            </a>
+            </div>
+            <div class="PNavigation">
+                <ul class="linkList">
+                    <li class="list portfolio">
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="list projectVideos">
+                        <a href="resume.html">Resume</a>
+                    </li>
+                    <li class="list aboutMe">
+                        <a href="aboutMe.html">About Me</a>
+                    </li>
+                    <li class="list contactMe">
+                        <a href="contactMe.html">Contact Me</a>
+                    </li>
+                </ul>
+                <div class="accountImages">
+                    <a class="btn linkedInImage" href="https://www.linkedin.com/in/mckern-auguste-0700931a2/">
+                    <i class="fa fa-linkedin-square fa-2x"></i>
+                    </a>
+                    <a class= "btn emailInImage" href="mailto:mckernauguste@gmail.com">
+                    <i class="fa fa-envelope-open-text fa-lg"></i>
+                    </a>
+                    <a class="btn gitHubImage" href="https://github.com/macauguste">
+                    <i class="fa fa-github-square fa-2x"></i>
+                    </a>    
+                </div>
+            </div>
+        </div>
+        <div class= "InformationScreen" id="InformationScreen" src="">
+            <iframe class="pdf" src="https://drive.google.com/file/d/1_JCoGnsHUUT1XVZqQ_G7Qak9jaXF7lwl/preview" 
+                scrolling="auto" id="pdf">
+            </iframe>
+        </div>  
+        
+</body>
+</html>
+<script src="app.js"></script>
+<!--
+//infomation
+<img v-bind:src="picture" style="width:100%;" alt="" />
+<ul>
+    <h1 style="font-size:5vw">{{ title }} </h1>
+    <h1 style="font-size:2.5vw">Age: {{ age }} </h1>
+    <h1 style="font-size:2.5vw">Languages: {{ languages }} </h1>
+    <h1 style="font-size:2.5vw">Email: {{ email}} </h1>
+</ul>
+
+//video
+<video class="videoPlayer" id="videoPlayer">
+    <source class="videoSrc" id="videoSrc" src="/videos/vid1.mp4" type="video/mp4">
+</video>
+-->
+<!--
+<iframe class="pdf" src="https://drive.google.com/file/d/1_JCoGnsHUUT1XVZqQ_G7Qak9jaXF7lwl/preview" frameBorder="0"
+    scrolling="auto" id="pdf">
+</iframe>
+-->
