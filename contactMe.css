@@ -17,7 +17,7 @@ html{
 
 .sidebar {
   float: right;
-  background-color: #142B3A;
+  background-color:  rgba(20, 43, 58, 0.7);
   height: 100%;
   width: 25%;
   padding: 0;
@@ -168,11 +168,32 @@ li.list:not(:last-child) {
   margin-top: 30%;
   margin-left: 5%;
   margin-right: 5%;
+  
 }
 
 .contactMe{
   color: white;
 }
+
+ #contactMe{
+    padding: 0;
+    margin: auto;
+    height: 145px;
+    width: 320px;
+    color: white;
+    top: 50%;
+    text-transform:none;
+    background-color: rgba(20, 43, 58, 0.5);
+
+  }
+
+  .cM{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: white;
+    text-align: left; 
+  }
 
 .sidebar, .informationScreen{
   width: 100%;
@@ -333,15 +354,17 @@ li.list:not(:last-child) {
   }
 
   #contactMe{
+    
     padding: 0;
     margin: 0;
-    height: 70px;
+    height: 134px;
     width: 320px;
     position: absolute;
-    top: 57%;
+    top: 54%;
     right: 27%;
     color: white;
     text-transform:none;
+    background-color: rgba(20, 43, 58, 0.5);
   }
 
   .cM{
