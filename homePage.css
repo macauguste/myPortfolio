@@ -6,7 +6,7 @@
 }
 
 html{ 
-  background: url(images/pitonsBg.jpg) no-repeat center center fixed; 
+  background: url(images/pitonsBg2.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -168,6 +168,11 @@ li.list:not(:last-child) {
   margin-top: 20%;
   margin-left: 5%;
   margin-right: 5%;
+}
+
+#picOwner{
+  color: #ffffff;
+  font-size: 10px;
 }
 
 .sidebar, .informationScreen{
