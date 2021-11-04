@@ -246,7 +246,7 @@ li.list:not(:last-child) {
   }
 
   .fa-linkedin-square{
-    width: 5%;
+    width: 100%;
   } 
 
   .PInfo {
@@ -292,7 +292,7 @@ li.list:not(:last-child) {
   } 
 
   li.list{ 
-    margin-bottom: 50px;  
+    margin-bottom: 70px;  
   }
 
   .accountImages{
@@ -357,13 +357,12 @@ li.list:not(:last-child) {
   }
 
   #contactMe{
-    
     padding: 0;
     margin: 0;
     height: 160px;
     width: 320px;
     position: absolute;
-    top: 52%;
+    top: 54%;
     right: 27%;
     color: white;
     text-transform:none;

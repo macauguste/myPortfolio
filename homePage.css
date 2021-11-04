@@ -264,7 +264,7 @@ li.list:not(:last-child) {
   } 
 
   li.list{ 
-    margin-bottom: 50px;  
+    margin-bottom: 70px;  
   }
 
   .accountImages{
@@ -323,7 +323,7 @@ li.list:not(:last-child) {
   font-weight: bold;
   text-shadow: 0 0 20px #000000;
   font-style: italic;
-  margin-top: 20%;
+  margin-top: 25%;
   margin-left: 10%;
   margin-right: 10%;
   }

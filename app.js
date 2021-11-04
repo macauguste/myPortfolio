@@ -6,6 +6,7 @@ let app = Vue.createApp({
       picture: '/images/mckernPng.jpg',
       title: 'Full Stack Developer',
       languages: ' Java, Javascript, C++, Css, Html',
+      projectOne: 'Database Application',
       age: function findAge(currentAge) {
           birthdate = 1996;
           currentYear = new Date.getFullYear();
@@ -15,7 +16,7 @@ let app = Vue.createApp({
             currentAge
             }
       },
-      email: 'mckernauguste@gmail.com'
+      email: 'mckernauguste@gmail.com',
     },
 
     
@@ -31,6 +32,7 @@ let app = Vue.createApp({
       languages: Me.languages,
       age: Me.currentAge,
       email: Me.email,
+      projectOne: Me.projectOne,
     }
   },
 });
