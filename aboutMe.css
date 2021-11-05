@@ -313,9 +313,9 @@ li.list:not(:last-child) {
     padding: .1em;
   }
 
-  #aboutMeText{
-    font-size: 20px;
-    padding-top: 10%;
+  #aboutMeText1{
+    font-size: 25px;
+    padding-top: 5%;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -323,6 +323,18 @@ li.list:not(:last-child) {
     color: white;
     text-shadow: 4px 4px 5px rgb(0, 0, 0);
   }
+
+  #aboutMeText2{
+    font-size: 25px;
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    color: white;
+    text-shadow: 4px 4px 5px rgb(0, 0, 0);
+  }
+
 
 .sidebar, .informationScreen{
   width: 100%;
@@ -485,8 +497,6 @@ li.list:not(:last-child) {
   .skills{
     padding: 0;
     margin-left: auto; 
-    margin-top: 12%;
-    margin-right: 0;
     height: 450px;
     width: 400px;
     color: white;
@@ -497,6 +507,7 @@ li.list:not(:last-child) {
   .aboutMeImage{
     height:40%;
     padding-top: 15px;
+    
   }
 
   .skillsPic{
@@ -638,12 +649,9 @@ li.list:not(:last-child) {
     padding: .1em;
   }
 
-  #aboutMeText{
-    margin-left: 15px;
-    font-size: 21px;
-    padding-top: 30%;
+  #aboutMeText1{
+    padding-bottom: 30px;
     display: flex;
-    float: left;
     color: white;
     text-shadow: 4px 4px 5px rgb(0, 0, 0);
   }
